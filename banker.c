@@ -1,6 +1,6 @@
 #include<stdio.h>
 void main(){
-    int pno,rno,i,j,k,count=0;check=0;
+    int pno,rno,i,j,k,count=0,check=0;
     int alloc[10][10],max[10][10],avail[10],need[10][10],comp[10];
     
     printf("Enter the number of proceses ");
@@ -56,7 +56,7 @@ void main(){
     printf("\navailable\n");
     for(i=0;i<rno;i++)
         printf("%d",avail[i]);
-    printf("\n")
+    printf("\n");
     
     while(count<pno){
         for(i=0;i<pno;i++){
@@ -82,7 +82,6 @@ void main(){
     }
     if(check==0)
         printf("system is not safe\n");
-        
     else
         printf("Systtem is safe");
 }
